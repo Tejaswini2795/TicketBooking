@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class forloop {
+	 public static void main(String[] args) {
+         Scanner sc=new Scanner(System.in);
+         System.out.println("================================");
+         for(int i=0;i<3;i++){
+        	 System.out.println("enter string");
+             String s1=sc.next();
+             System.out.println("enter number");
+             int x=sc.nextInt();
+             String num="";
+             if(s1.length()<15){
+                 for(int j=0; j<15-s1.length();j++){
+                     s1=s1+" ";
+                 }
+                 System.out.println(s1);
+             }
+             if(x<10)
+        		 num = "00"+x;
+             else if(x<=99){
+            	 
+                 num="0"+x;
+             }else
+            	 num=""+x;
+             //Complete this line
+             System.out.println(s1+num);
+             s1 = "";
+             num="";
+             System.out.println("i value"+i);
+         }
+         System.out.println("================================");
+
+ }
+}
